@@ -36,6 +36,8 @@ app.use(morgan('dev'));   // Configure logging of HTTP requests in development m
 
 const corsOptions = {
   origin: 'https://plantx-kbkv.onrender.com',
+  methods: ['POST', 'GET', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
   optionSuccessStatus: 200
 }
