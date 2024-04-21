@@ -35,7 +35,7 @@ app.use(express.json());  // Parse incoming JSON data in the request body
 app.use(morgan('dev'));   // Configure logging of HTTP requests in development mode
 
 const corsOptions = {
-  origin: '*',
+  origin: 'https://plantx-kbkv.onrender.com',
   credentials: true,
   optionSuccessStatus: 200
 }
